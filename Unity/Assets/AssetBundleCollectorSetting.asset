@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowPackageView: 0
   EnableAddressable: 1
-  UniqueBundleName: 0
-  ShowEditorAlias: 0
+  UniqueBundleName: 1
+  ShowEditorAlias: 1
   Packages:
   - PackageName: DefaultPackage
     PackageDesc: 
@@ -113,6 +113,45 @@ MonoBehaviour:
       Collectors:
       - CollectPath: Assets/Bundles/Config/GlobalConfig
         CollectorGUID: a278cf2ad021c4e4c928f3b8c0094b8b
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: YIUI
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameRes/YIUI
+        CollectorGUID: 2ea5fa0bdb364324fa35225ae0fa0268
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: RodDot
+      GroupDesc: "\u7EA2\u70B9"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameRes/RedDot
+        CollectorGUID: 5efe8114bd010fe4db6862dcc228e655
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: I2
+      GroupDesc: "\u591A\u8BED\u8A00"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameRes/I2Localization
+        CollectorGUID: f35fd899268fa1143a38d35015c8af00
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

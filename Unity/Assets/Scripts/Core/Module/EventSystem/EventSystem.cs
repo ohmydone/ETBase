@@ -66,7 +66,7 @@ namespace ET
         }
     }
     
-    public class EventSystem: Singleton<EventSystem>, ISingletonUpdate, ISingletonLateUpdate
+    public partial class EventSystem: Singleton<EventSystem>, ISingletonUpdate, ISingletonLateUpdate
     {
         private class EventInfo
         {
@@ -89,9 +89,9 @@ namespace ET
         
         private Dictionary<Type, Dictionary<int, object>> allInvokes = new(); 
 
-        private TypeSystems typeSystems;
+        public TypeSystems typeSystems;
 
-        private readonly Queue<long>[] queues = new Queue<long>[InstanceQueueIndex.Max];
+        public readonly Queue<long>[] queues = new Queue<long>[InstanceQueueIndex.Max];
 
         public EventSystem()
         {

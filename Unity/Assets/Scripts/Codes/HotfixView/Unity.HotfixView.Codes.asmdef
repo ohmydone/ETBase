@@ -8,7 +8,9 @@
         "Unity.Hotfix.Codes",
         "Unity.ModelView.Codes",
         "Unity.Mathematics",
-        "Unity.Loader"
+        "Unity.Loader",
+        "YIUIFramework",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [
         "Editor"
