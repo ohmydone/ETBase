@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIShinyEditor.cs" />
+     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIGradientEditor.cs" />
+     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\MaterialDirtyScope.cs" />
+     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UITransitionEffectEditor.cs" />
      <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIShadowEditor.cs" />
      <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIHsvModifierEditor.cs" />
      <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIDissolveEditor.cs" />
-     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIShinyEditor.cs" />
      <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIEffectEditor.cs" />
-     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIGradientEditor.cs" />
-     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UITransitionEffectEditor.cs" />
      <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\ImportSampleMenu.cs" />
-     <Compile Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\MaterialDirtyScope.cs" />
      <None Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor\UIEffect-Editor.asmdef" />
      <Folder Include="Assets\Plugins\YIUIFramework\Plugins\UIEffect\Scripts\Editor" />
      <Reference Include="UnityEngine">
@@ -316,6 +316,9 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="Sirenix.Reflection.Editor">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="System.Runtime.CompilerServices.Unsafe">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
      </Reference>
@@ -328,8 +331,17 @@
      <Reference Include="SharpCompress">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\SharpCompress.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\YIUIFramework\Plugins\I2Localization\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
+     </Reference>
      <Reference Include="LZ4">
      <HintPath>D:\GithubProject\X-ET7\Unity\Library\PackageCache\com.focus-creative-games.hybridclr_unity@00cedc166f\Plugins\LZ4.dll</HintPath>
+     </Reference>
+     <Reference Include="DemiEditor">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.OdinInspector.Attributes">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
      </Reference>
      <Reference Include="CommandLine">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\CommandLine.dll</HintPath>
@@ -340,8 +352,14 @@
      <Reference Include="NLog">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\NLog.dll</HintPath>
      </Reference>
+     <Reference Include="Sirenix.Serialization.Config">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+     </Reference>
      <Reference Include="dnlib">
      <HintPath>D:\GithubProject\X-ET7\Unity\Library\PackageCache\com.focus-creative-games.hybridclr_unity@00cedc166f\Plugins\dnlib.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
      </Reference>
      <Reference Include="DnsClient">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\DnsClient.dll</HintPath>
@@ -351,30 +369,6 @@
      </Reference>
      <Reference Include="MongoDB.Driver.Core">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="CsvHelper">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Editor\CsvHelper.dll</HintPath>
-     </Reference>
-     <Reference Include="MongoDB.Bson">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.Reflection.Editor">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\YIUIFramework\Plugins\I2Localization\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiEditor">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.OdinInspector.Attributes">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.Serialization.Config">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
      </Reference>
      <Reference Include="DOTweenPro">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
@@ -399,6 +393,12 @@
      </Reference>
      <Reference Include="Sirenix.Serialization">
      <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+     </Reference>
+     <Reference Include="CsvHelper">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\Editor\CsvHelper.dll</HintPath>
+     </Reference>
+     <Reference Include="MongoDB.Bson">
+     <HintPath>D:\GithubProject\X-ET7\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>D:\GithubProject\X-ET7\Unity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

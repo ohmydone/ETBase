@@ -33,6 +33,12 @@
 #else
 		public static bool EnableIL2CPP = false;
 #endif
+
+#if USE_FGUI
+		public static bool UseFGUI = true;
+#else
+		public static bool UseFGUI = false;
+#endif
 		
 		public static UnityEngine.Object LoadAssetAtPath(string s)
 		{

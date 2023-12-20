@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using UnityEngine;
+using YIUIFramework;
 
 namespace ET.Client
 {
@@ -13,9 +14,10 @@ namespace ET.Client
             Root.Instance.Scene.AddComponent<FsmDispatcherComponent>();
 
             Scene clientScene = await SceneFactory.CreateClientScene(1, "Game");
-
+            
+            await YIUIMgrComponent.Inst.OpenPanelAsync<LoginPanelComponent>();
             // 热更流程
-            await HotUpdateAsync(clientScene);
+            //await HotUpdateAsync(clientScene);
         }
   
         private static async ETTask HotUpdateAsync(Scene clientScene)

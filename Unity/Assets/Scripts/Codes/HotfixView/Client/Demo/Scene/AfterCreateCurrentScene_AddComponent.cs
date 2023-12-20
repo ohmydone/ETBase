@@ -5,7 +5,15 @@ namespace ET.Client
     {
         protected override async ETTask Run(Scene scene, EventType.AfterCreateCurrentScene args)
         {
-            scene.AddComponent<FUIComponent>();
+            if (Define.UseFGUI)
+            {
+                scene.AddComponent<FUIComponent>();
+            }
+            else
+            {
+                
+            }
+            
             await ETTask.CompletedTask;
         }
     }
