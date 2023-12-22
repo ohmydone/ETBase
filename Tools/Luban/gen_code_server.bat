@@ -55,8 +55,8 @@ if %ERRORLEVEL% NEQ 0 exit
 echo ======================= Server StartConfig %CONFIG_FOLDER% Json ==========================
 %GEN_CLIENT% --template_search_path CustomTemplate -j cfg --^
  -d %CONF_ROOT%\Defines\__root__.xml ^
- --input_data_dir %CONF_ROOT%\Datas\StartConfig\Localhost ^
- --output_data_dir %OUTPUT_JSON_DIR%\s\StartConfig\Localhost ^
+ --input_data_dir %CONF_ROOT%\Datas\StartConfig\%CONFIG_FOLDER% ^
+ --output_data_dir %OUTPUT_JSON_DIR%\s\StartConfig\%CONFIG_FOLDER% ^
  --gen_types data_json ^
  -s server
 

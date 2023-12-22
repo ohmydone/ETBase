@@ -43,7 +43,7 @@ namespace ET
                         "Assets/Scripts/Codes/Model/Generate/Client/",
                         "Assets/Scripts/Codes/Model/Share/",
                         "Assets/Scripts/Codes/Model/Client/",
-                        "Assets/Scripts/Codes/ModelView/Client/",
+                        "Assets/Scripts/Codes/ModelView/",
                     };
                     break;
                 case CodeMode.Server:
@@ -121,7 +121,7 @@ namespace ET
                     {
                         "Assets/Scripts/Codes/Hotfix/Share/",
                         "Assets/Scripts/Codes/Hotfix/Client/",
-                        "Assets/Scripts/Codes/HotfixView/Client/",
+                        "Assets/Scripts/Codes/HotfixView/",
                     };
                     break;
                 case CodeMode.Server:
