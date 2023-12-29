@@ -15,9 +15,9 @@ namespace ET.Client
 
             Scene clientScene = await SceneFactory.CreateClientScene(1, "Game");
             
-            await YIUIMgrComponent.Inst.OpenPanelAsync<LoginPanelComponent>();
+            //await YIUIMgrComponent.Inst.OpenPanelAsync<LoginPanelComponent>();
             // 热更流程
-            //await HotUpdateAsync(clientScene);
+            await HotUpdateAsync(clientScene);
         }
   
         private static async ETTask HotUpdateAsync(Scene clientScene)
