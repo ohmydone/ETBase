@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using HybridCLR.Editor;
+using HybridCLR.Editor.Settings;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Compilation;
